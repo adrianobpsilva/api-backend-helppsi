@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Aplica o CORS a todos os endpoints
-                .allowedOrigins("http://localhost:3000, https://helpsi.netlify.app/,") // 🛑 A ORIGEM DO SEU FRONTEND 🛑
+                .allowedOrigins("https://helpsi.netlify.app/,") // 🛑 A ORIGEM DO SEU FRONTEND 🛑
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
